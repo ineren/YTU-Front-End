@@ -1,0 +1,55 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-top: 3rem;
+    width: 150;
+}
+
+.search {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.input {
+    margin-bottom: 4px;
+}
+
+.footer {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.searchers,
+.links,
+.newsletter {
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+    padding: 1em;
+    margin: 2px;
+}
+
+.searchers {
+    background-color: aqua;
+}
+
+.links {
+    background-color: rgb(126, 229, 218);
+}
+
+.newsletter {
+    background-color: rgb(112, 204, 194);
+}
+
