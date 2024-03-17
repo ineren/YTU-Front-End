@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gallery {
+    padding: 20px 0;
+}
+
+.gallery-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 10px); /* 3 sütunlu bir görünüm kenar boşlukları dahil */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* İnternetten bulduğum kesmeden sığdırmayı sağlama komutu */
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Resim büyürkenki animasyonu */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.2); /* Resmi büyütmek için */
+}
+
+.gallery-item:not(:hover) img {
+    transform: scale(1); /* Resmi küçültmek için */
+}
+.gallery-item:hover {
+    z-index: 1; /* Büyüyen resmi ön plana taşıması için */
+}
